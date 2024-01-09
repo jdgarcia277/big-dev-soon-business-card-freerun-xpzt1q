@@ -1,19 +1,31 @@
-/* This is an example CSS file, feel free to remove/edit it anytime */
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  text-align: center;
+:root{
+  --backgroundColor: #c8e6ca;
+  --uiContainer: #f6f6f6;
 }
 
-.footer a {
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
-
-.footer span {
-  font-size: 14px;
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--backgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img, picture, svg, video{
+  display: block;
+  max-width: 100%;
+}
+.ui-container{
+  height: 75vh;
+  width: 80vw;
+  background-color: var(--uiContainer);
+  border-radius: 50px;
+  box-shadow: -10px 10px 10px #afc8af;
 }
